@@ -1,0 +1,4 @@
+[shutils]
+url = git@github.com:chibidev/shutils.git
+ref = master
+
