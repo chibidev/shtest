@@ -1,4 +1,4 @@
-source shutils/colors.sh
+source `dirname ${BASH_SOURCE[0]}`/shutils/colors.sh
 
 MSG_RUN="${COLOR_GREEN}[  RUN   ]${COLOR_CLEAR}"
 MSG_OK="${COLOR_GREEN}[   OK   ]${COLOR_CLEAR}"

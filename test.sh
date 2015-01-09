@@ -1,5 +1,5 @@
-source messages.sh
-source shutils/commands.sh
+source `dirname ${BASH_SOURCE[0]}`/messages.sh
+source `dirname ${BASH_SOURCE[0]}`/shutils/commands.sh
 
 function root_setup() {
     mkdir -p "$1"
