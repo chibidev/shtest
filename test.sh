@@ -70,7 +70,7 @@ function fail() {
 }
 
 function expect() {
-    if ! eval $@
+    if ! eval "$@"
     then
         echo -e "$MSG_FAILED Expectation failed for condition $@ (line ${BASH_LINENO[0]})"
         fail
