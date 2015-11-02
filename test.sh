@@ -19,7 +19,7 @@ function is_test_function() {
 function run_test() {
     last_test_status=0
 
-    workdir="$(mktemp -d -t tmp)"
+    workdir="$(mktemp -d)"
 
     root_setup "$workdir"
     function_exists setup && setup
