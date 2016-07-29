@@ -63,6 +63,10 @@ function run_tests() {
     do
         echo -e "$MSG_FAILED $t"
     done
+    if [ ${#failed_tests[@]} -gt 0 ]
+    then
+      return 1
+    fi
 }
 
 function fail() {
